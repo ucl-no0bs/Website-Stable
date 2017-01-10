@@ -9,7 +9,7 @@
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css"  media="screen,projection"/>
 </head>
 
-<body  align="center">
+<body class="container" align="center">
 
 <form action="controller_login.php" align="centre">
 <h3><label><i>Fill in your details to log-in...</i></label></h3>
@@ -26,8 +26,8 @@
 
 </form>
 
-<a href = "view/view_home.php"><button type="submit">Login</button></a>
-<a href = "view/view_signup.php"><button type="submit">Sign Up</button></a>
+<a href = "view/view_home.php"><button class="btn" type="submit">Login</button></a>
+<a href = "view/view_signup.php"><button class="btn" type="submit">Sign Up</button></a>
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
