@@ -1,7 +1,8 @@
 <?php
-include_once('../model/db_connection.php');
-include_once('../model/model_login.php');
 
+include_once('../model/db_connection.php');
+
+include_once('../model/model_login.php');
 // gets input from the form in the global variable called $_GET
 // Satinitizes the input (in the safe version)
 

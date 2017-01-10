@@ -1,1 +1,18 @@
-<?php // Credentials, 'root' etc.. are set here ?>
+<?php
+
+// This establishes a connection with the database
+
+$servername='localhost';
+// username and password might be different on a Windows setting
+$username='root';
+$password='';
+$database='sw5';
+$conn=New mysqli($servername,$username,$password,$database);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+echo "Connected successfully"."<br />";
+
+?>
