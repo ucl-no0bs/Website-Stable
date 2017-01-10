@@ -21,7 +21,7 @@
     <input type="password" placeholder="Enter Password" name="psw" required>
 
 
-    <input type="checkbox" checked="checked"> Remember me
+    <input type="checkbox" checked="checked"> Remember me</input>
   </div>
 
 </form>
