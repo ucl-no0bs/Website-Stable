@@ -3,5 +3,5 @@
 include_once('model/db_connection.php');
 
 // Includes the actual index
-include_once('controller/controller_login.php');
+include_once('view/view_login.php');
  ?>

@@ -22,8 +22,8 @@
 
 </form>
 
-<a href = "home.php"><button type="submit">Login</button></a>
-<a href = "signup.php"><button type="submit">Sign Up</button></a>
+<a href = "view/view_home.php"><button type="submit">Login</button></a>
+<a href = "view/view_signup.php"><button type="submit">Sign Up</button></a>
 
 </body>
 </html>

@@ -9,7 +9,7 @@
 
 <body>
     <h2>Hello peasant..Welcome to the secret society</h2>
-    <form action="controller_home_addSnippets.php" method="post">
+    <form action="../controller/controller_home_addSnippet.php" method="post">
         <label><b><i>Snippet: </i></b></label>
         <input type="text" name="snippet" placeholder="Enter snippet here">
         <input type="submit" value="show snippet"/>
