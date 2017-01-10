@@ -15,9 +15,6 @@ if (!$conn) {
 }
 echo "Connected successfully"."<br />";
 
-$test = "SELECT * FROM users";
-if(mysqli_query($conn, $test)){
-    echo "YAY";
-}
+
 
 ?>

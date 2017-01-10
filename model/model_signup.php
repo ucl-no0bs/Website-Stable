@@ -3,7 +3,6 @@
 // include module_safety.php
 include_once('model_safety.php');
 
-include_once('db_connection.php');
 
 // add user and password to database
 function add_user ($username, $password){
