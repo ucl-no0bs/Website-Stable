@@ -26,8 +26,8 @@
 
 </form>
 
-<a href = "view/view_home.php"><button class="btn" type="submit">Login</button></a>
-<a href = "view/view_signup.php"><button class="btn" type="submit">Sign Up</button></a>
+<a href = "view/view_home.php"><button class="btn waves-effect waves-light" type="submit">Login</button></a>
+<a href = "view/view_signup.php"><button class="btn waves-effect waves-light" type="submit">Sign Up</button></a>
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

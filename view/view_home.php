@@ -16,7 +16,7 @@
     <form action="../controller/controller_home_addSnippet.php" method="post">
         <label><b><i>Snippet: </i></b></label>
         <input type="text" name="snippet" placeholder="Enter snippet here">
-        <input class="btn" type="submit" value="show snippet"/>
+        <input class="btn waves-effect waves-light" type="submit" value="show snippet"/>
     </form>
 
     <?php //for each element in the variable "$snippets" do stuff ?>

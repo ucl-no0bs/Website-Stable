@@ -16,7 +16,7 @@
 		<label><b>Password</b></label>
 		<input type="text" placeholder="Enter Password" name="pswd" required>
 		<br>
-		<button class="btn">Submit</button>
+		<button class="btn waves-effect waves-light">Submit</button>
 	</form>
 
 	<!--Import jQuery before materialize.js-->
