@@ -5,7 +5,7 @@
 $servername='localhost';
 // username and password might be different on a Windows setting
 $username='root';
-$password='';
+$password='root';
 $database='sw5';
 $conn=New mysqli($servername,$username,$password,$database);
 
@@ -14,5 +14,10 @@ if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully"."<br />";
+
+$test = "SELECT * FROM users";
+if(mysqli_query($conn, $test)){
+    echo "YAY";
+}
 
 ?>
