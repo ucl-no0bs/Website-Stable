@@ -11,4 +11,5 @@
 
 <ul id="user_menu" class="dropdown-content">
   <li><a href="view_profile.php">Settings</a></li>
+  <li><a href="../index.php">Logout</a></li>
 </ul>
