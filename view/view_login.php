@@ -11,7 +11,7 @@
 
 <body class="container" align="center">
 
-<form action="../controller/controller_login.php" align="centre" action="get">
+<form action="./controller/controller_login.php" align="centre" action="get">
 <h3><label><i>Fill in your details to log-in...</i></label></h3>
   <div class="container">
     <label><b>Username</b></label>
@@ -27,7 +27,7 @@
 </form>
 
 
-<a href = "view_signup.php"><button class="btn waves-effect waves-light" type="submit">Sign Up</button></a>
+<a href = "view/view_signup.php"><button class="btn waves-effect waves-light" type="submit">Sign Up</button></a>
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

@@ -14,6 +14,7 @@ else
     echo "user doesn't exist";
 
 // if it s correct: set the global $_SESSION username, and then redirect to view_home.php
-// else, redirect to view_login.php
+// else, redirect to index.php
+// note: don't redirect to login.php directly !
 
  ?>
