@@ -27,8 +27,10 @@
 
       <div class="section">
         <ul class="collapsible popout" data-collapsible="accordion">
-        
-          <li>
+
+        <?php include_once("../controller/controller_home_showSnippets.php"); ?>
+
+          <!--<li>
             <div class="collapsible-header active">Snippet 1</div>
             <div class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non ligula ut dolor condimentum pellentesque. Praesent feugiat convallis erat, sed facilisis nulla varius eu. Nullam sit amet nibh aliquam, consequat velit non, malesuada neque.
               Pellentesque pharetra porttitor iaculis. Sed vel euismod urna. Suspendisse quis ligula euismod nibh imperdiet fringilla. Sed a turpis scelerisque, sagittis urna eget, dictum nisi.</div>
@@ -45,11 +47,9 @@
               dignissim. Sed gravida justo et turpis bibendum tincidunt. Maecenas vestibulum efficitur ultricies. Donec et sem et eros cursus vehicula a at massa. Suspendisse velit velit, ullamcorper quis est nec, tempor bibendum sem. Nunc porta, lectus
               ut mattis cursus, orci odio suscipit dolor, ac ultrices massa metus et orci. Vivamus finibus nibh vitae eros hendrerit rutrum. Proin ultricies faucibus mi, eget pharetra nulla rhoncus ut. Aenean placerat sem in augue tempus, et malesuada
               turpis dignissim. Vivamus efficitur sit amet nunc vel ullamcorper.</div>
-          </li>
+          </li>-->
           <ul>
       </div>
-
-      <?php include_once("../controller/controller_home_showSnippets.php"); ?>
 
     </div>
 

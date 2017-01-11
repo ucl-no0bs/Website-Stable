@@ -6,10 +6,10 @@ include_once('../model/model_home.php');
 
 
 $snippets = get_snippets($_SESSION["current_user"]);
-
+$count = 1;
 while($row = mysqli_fetch_assoc($snippets)){
     echo '<li>
-            <div class="collapsible-header active">Snippet 1</div>
+            <div class="collapsible-header active">Snippet ' . $count++ . '</div>
             <div class="collapsible-body">' . $row['snippet'] . '</div>
           </li>';
 }
