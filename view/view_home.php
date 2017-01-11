@@ -27,6 +27,7 @@
 
       <div class="section">
         <ul class="collapsible popout" data-collapsible="accordion">
+        
           <li>
             <div class="collapsible-header active">Snippet 1</div>
             <div class="collapsible-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non ligula ut dolor condimentum pellentesque. Praesent feugiat convallis erat, sed facilisis nulla varius eu. Nullam sit amet nibh aliquam, consequat velit non, malesuada neque.

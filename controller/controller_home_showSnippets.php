@@ -8,7 +8,10 @@ include_once('../model/model_home.php');
 $snippets = get_snippets($_SESSION["current_user"]);
 
 while($row = mysqli_fetch_assoc($snippets)){
-    echo "a snippet: ". $row['snippet'] . "<br />";
+    echo '<li>
+            <div class="collapsible-header active">Snippet 1</div>
+            <div class="collapsible-body">' . $row['snippet'] . '</div>
+          </li>';
 }
 
 // queries all the snippets (using the functions defined in model)
