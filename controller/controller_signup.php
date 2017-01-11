@@ -11,9 +11,12 @@ include_once('../model/model_signup.php');
 add_user($_POST['username'], $_POST['password']);
 
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> aksel_test
 // for convenience to us, just redirect to login_view.php page
 
 
