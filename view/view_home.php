@@ -13,7 +13,7 @@
   <body>
 
     <?php include_once("import_navbar.php"); ?>
-    <?php echo "heheyehey " . $_SESSION['current_user'] . " dd"; ?>
+    <?php// echo "heheyehey " . $_SESSION['current_user'] . " dd"; ?>
 
     <div class="container">
       <div class="center">
