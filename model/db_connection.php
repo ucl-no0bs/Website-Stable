@@ -10,11 +10,10 @@ $database='sw5';
 $conn=New mysqli($servername,$username,$password,$database);
 
 // Check connection
-if (!$conn) {
+if (mysqli_connect_errno()) {
     die("Connection failed: " . mysqli_connect_error());
 }
 echo "Connected successfully"."<br />";
-
 
 
 ?>
