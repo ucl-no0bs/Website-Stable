@@ -5,7 +5,7 @@
 $servername='localhost';
 // username and password might be different on a Windows setting
 $username='root';
-$password='root';
+$password='admin';
 $database='sw5';
 $conn=New mysqli($servername,$username,$password,$database);
 
