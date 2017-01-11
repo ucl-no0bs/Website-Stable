@@ -15,7 +15,8 @@ $user_exists = check_user($_GET['username'], $_GET['password']);
 if($user_exists) {
     echo "user exists"."<br />";
     $_SESSION["current_user"] = $_GET['username'];
-    echo "<script> window.location.assign('../view/view_home.php'); </script>";
+    //echo "<script> window.location.assign('../view/view_home.php'); </script>";
+    echo "<a href='../view/view_home.php'>Go to home page</a>";
     //echo "<a href = '../view/view_home.php'><button class='btn waves-effect waves-light'>Home Page</button></a>";
 } else {
     echo "user/password doesn't exist";

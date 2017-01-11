@@ -7,7 +7,7 @@ include_once('../model/model_home.php');
 
 add_snippet($_SESSION['current_user'], $_POST['snippet']);
 
-echo "<script> window.location.assign('../view/view_home.php'); </script>";
-
+//echo "<script> window.location.assign('../view/view_home.php'); </script>";
+echo "<a href='../view/view_home.php'>Go to home page</a>";
 
  ?>
