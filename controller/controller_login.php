@@ -1,5 +1,5 @@
 <?php
-session_start(); 
+session_start();
 
 include_once('../model/db_connection.php');
 
@@ -18,7 +18,7 @@ if($user_exists) {
     echo "<script> window.location.assign('../view/view_home.php'); </script>";
     //echo "<a href = '../view/view_home.php'><button class='btn waves-effect waves-light'>Home Page</button></a>";
 } else {
-    echo "user doesn't exist";
+    echo "user/password doesn't exist";
 }
 
 // if it s correct: set the global $_SESSION username, and then redirect to view_home.php
