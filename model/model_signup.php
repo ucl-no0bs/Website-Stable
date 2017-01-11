@@ -17,6 +17,6 @@ function add_user ($username, $password){
     }
 }
 
-echo "model_signup successfully included !"."<br />";
+echo "model_signup included"."<br />";
 
  ?>
