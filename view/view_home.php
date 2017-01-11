@@ -2,11 +2,8 @@
 <html>
 
 <head>
-  <title>Home Page</title>
-  <!--Import Google Icon Font-->
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css" media="screen,projection" />
+    <title>Home Page</title>
+    <?php include_once("import_materialize.php"); ?>
 </head>
 
 <?php // calls the showSnippet controller ?>
