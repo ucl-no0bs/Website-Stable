@@ -31,8 +31,8 @@
           <div id="modal" class="modal bottom-sheet">
             <div class="modal-content">
               <form action="../controller/controller_home_addSnippet.php" method="post">
-                <label><b><i>Snippet: </i></b></label>
-                <input type="text" name="snippet" placeholder="Enter snippet here">
+                <label><b><i>New Note: </i></b></label>
+                <input type="text" name="snippet" placeholder="Enter new note here">
                 <input class="btn waves-effect waves-light" type="submit" value="Add Note" />
               </form>
             </div>
