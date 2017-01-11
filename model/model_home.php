@@ -11,6 +11,7 @@ function get_snippets ($username){
 
     echo "in get_snippets function with username parameter: ". $username ."<br />";
     $sql = "SELECT snippet from snippets WHERE username='$username'";
+    
     $result = mysqli_query($conn, $sql);
     if($result){
         echo "snippets successfully retrieved !"."<br />";
@@ -20,15 +21,21 @@ function get_snippets ($username){
     }
 }
 
+function add_snippet($username, $snippet){
+    global $conn;
 
-// SELECT snippet from snippets WHERE username='user123'
+    echo "in add_snippet function with parameters: ".$username." ".$snippet."<br />";
 
-/*
-$result = mysql_query('SELECT * WHERE username=session_username');
-if (!$result) {
-    die('Invalid query: ' . mysql_error());
+    //INSERT INTO snippets (username, snippet) VALUES ('akselcc', 'some text here')
+    $sql = "INSERT INTO snippets (username, snippet) VALUES ('$username', '$snippet')";
+    if(mysqli_query($conn, $sql)){
+        echo "snippet added successfully !"."<br />";
+    } else{
+        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    }
+
 }
-*/
+
 
 /* function
 adds a snippet from a certain user
