@@ -1,5 +1,6 @@
-<html>
+<?php session_start(); ?>
 
+<html>
 <head>
   <title>Login</title>
   <?php include_once("import_materialize.php"); ?>

@@ -4,7 +4,8 @@ include_once('../model/db_connection.php');
 
 include_once('../model/model_home.php');
 
-$snippets = get_snippets('user123');
+
+$snippets = get_snippets($_SESSION["current_user"]);
 
 while($row = mysqli_fetch_assoc($snippets)){
     echo "a snippet: ". $row['snippet'] . "<br />";

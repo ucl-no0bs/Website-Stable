@@ -3,7 +3,7 @@
     <a href="view_home.php" class="brand-logo">LOGO</a>
     <ul class="right">
       <li><a class="dropdown-button" data-activates="user_menu" data-beloworigin="true">
-        <?php echo $_SESSION['username']; ?><i class="material-icons right">arrow_drop_down</i></a>
+        <?php echo $_SESSION["current_user"]; ?><i class="material-icons right">arrow_drop_down</i></a>
       </li>
     </ul>
   </div>

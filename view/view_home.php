@@ -1,9 +1,11 @@
+<<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 
 <head>
     <title>Home Page</title>
-    <?php include_once("import_materialize.php"); ?>
+    <?php include_once('import_materialize.php'); ?>
 </head>
 
 <?php // calls the showSnippet controller ?>
@@ -11,6 +13,7 @@
   <body>
 
     <?php include_once("import_navbar.php"); ?>
+    <?php echo "heheyehey " . $_SESSION['current_user'] . " dd"; ?>
 
     <div class="container">
       <div class="center">
@@ -45,16 +48,17 @@
           <ul>
       </div>
 
-    </div>    
+      <?php include_once("../controller/controller_home_showSnippets.php"); ?>
+
+    </div>
 
     <?php //for each element in the variable "$snippets" do stuff ?>
 
+      <!--Import jQuery before materialize.js-->
+      <?php include_once("import_js.php"); ?>
       <script language="Javascript">
         $(".dropdown-button").dropdown();
       </script>
-
-      <!--Import jQuery before materialize.js-->
-      <?php include_once("import_js.php"); ?>
   </body>
 
 </html>
