@@ -33,7 +33,7 @@
   </div>
 
   <ul id="user_menu" class="dropdown-content">
-    <li><a href="">Settings</a></li>
+    <li><a href="view_profile.php">Settings</a></li>
   </ul>
 
   <?php //for each element in the variable "$snippets" do stuff ?>
