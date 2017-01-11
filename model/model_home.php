@@ -9,15 +9,15 @@ returns all snippets from a user
 function get_snippets ($username){
     global $conn;
 
-    echo "in get_snippets function with username parameter: ". $username ."<br />";
+    //echo "in get_snippets function with username parameter: ". $username ."<br />";
     $sql = "SELECT snippet from snippets WHERE username='$username'";
     
     $result = mysqli_query($conn, $sql);
     if($result){
-        echo "snippets successfully retrieved !"."<br />";
+        //echo "snippets successfully retrieved !"."<br />";
         return $result;
     } else{
-        echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+        ///echo "Error: " . $sql . "<br>" . mysqli_error($conn);
     }
 }
 
@@ -41,6 +41,6 @@ function add_snippet($username, $snippet){
 adds a snippet from a certain user
 */
 
-echo "model_home successfully included !"."<br />";
+//echo "model_home successfully included !"."<br />";
 
  ?>
