@@ -33,13 +33,13 @@
               <form action="../controller/controller_home_addSnippet.php" method="post">
                 <label><b><i>Snippet: </i></b></label>
                 <input type="text" name="snippet" placeholder="Enter snippet here">
-                <input class="btn waves-effect waves-light" type="submit" value="Add Snippet" />
+                <input class="btn waves-effect waves-light" type="submit" value="Add Note" />
               </form>
             </div>
           </div>
 
           <div class="section">
-            <h4>Your notes:</h4>
+            <h4>Your Notes:</h4>
             <div class="section">
               <ul class="collapsible popout" data-collapsible="accordion">
                 <?php include_once("../controller/controller_home_showSnippets.php"); ?>
