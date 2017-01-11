@@ -1,6 +1,6 @@
 <?php
 // connects to db with the include(..)
-//include_once('../model/db_connection.php');
+include_once('../model/db_connection.php');
 
 // gets the functions from include('...model_signup')
 include_once('../model/model_signup.php');
@@ -9,6 +9,10 @@ include_once('../model/model_signup.php');
 
 // add user/pw to database (with hash in safe version)
 add_user($_POST['username'], $_POST['password']);
+
+
+
+
 
 // for convenience to us, just redirect to login_view.php page
 
