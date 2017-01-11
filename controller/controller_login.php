@@ -1,6 +1,6 @@
 <?php
 
-include_once('../model/db_connection.php');
+//include_once('../model/db_connection.php');
 
 include_once('../model/model_login.php');
 // gets input from the form in the global variable called $_GET
@@ -8,6 +8,7 @@ include_once('../model/model_login.php');
 
 // Checks the database if username/pw exist by using the functions in model/model_login.php
 $user_exists = check_user($_GET['username'], $_GET['password']);
+
 if($user_exists)
     echo "user exists !";
 else
