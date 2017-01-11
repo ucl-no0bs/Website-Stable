@@ -8,14 +8,7 @@
 
 <body>
 
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo">LOGO</a>
-      <ul class="right">
-        <li><a class="dropdown-button" data-activates="user_menu" data-beloworigin="true">USERNAME<i class="material-icons right">arrow_drop_down</i></a></li>
-      </ul>
-    </div>
-  </nav>
+  <?php include_once("import_navbar.php"); ?>
 
   <div class="container section">
     <ul class="collection with-header">
