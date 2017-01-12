@@ -12,11 +12,14 @@ if (isset($_POST['username'])) {
     $sanitized_username = sanitizeUsername($_POST['username']);
     $hashed_pw = hashPassword($_POST['password']);
     
-    // Add sanitized username and hashed password to database
-    add_user($sanitized_username, $hashed_pw);
-    
-    // store the username during this session, and redirect to home page.
-    $_SESSION['current_user'] = $_POST['username'];
+    if (!user_exists($sanitized_username)) {
+        
+        // Add sanitized username and hashed password to database
+        add_user($sanitized_username, $hashed_pw);
+        
+        // store the username during this session, and redirect to home page.
+        $_SESSION['current_user'] = $_POST['username'];
+    }
 } else die;
 
 

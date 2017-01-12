@@ -20,9 +20,9 @@ function add_user ($username, $password){
 
 function user_exists($username){
     global $conn;
-    echo "the values passed are ".$username." and ".$password." <br />";
+    // echo "the values passed are ".$username." and ".$password." <br />";
     //$sql_query = "SELECT count(username) FROM users WHERE username='$username' AND password='$password'";
-    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+    $sql = "SELECT * FROM users WHERE username='$username'";
     $result = mysqli_query($conn, $sql);
 
     if(mysqli_num_rows($result) > 0){
