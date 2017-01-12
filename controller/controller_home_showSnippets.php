@@ -14,7 +14,7 @@ while($row = mysqli_fetch_assoc($private_snippets)){
           </li>';
 }
 
-echo "<h4>Public Snippets:</h4>";
+echo "<h4>Public Notes:</h4>";
 $public_snippets = get_snippets($_SESSION["current_user"], 'True');
 while($row2 = mysqli_fetch_assoc($public_snippets)){
     echo '<li>
