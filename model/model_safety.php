@@ -5,9 +5,11 @@
 sanitize input
 */
 
-/*function:
-hash pw
-*/
+function hackPassword ($user_pw) {
+    return password_hash($user_pw, PASSWORD_DEFAULT);
+}
+
+
 
 
  ?>

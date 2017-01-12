@@ -8,7 +8,7 @@ include_once('../model/model_login.php');
 //include_once('../view/import_materialize.php');
 
 // Satinitizes the input (in the safe version)
-
+$hashed_pw = 
 // Checks the database if username/pw exist by using the functions in model/model_login.php
 $user_exists = check_user($_GET['username'], $_GET['password']);
 

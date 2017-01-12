@@ -32,6 +32,4 @@ if (!$result) {
 }
 */
 
-echo "model_login successfully included !"."<br />";
-
  ?>
