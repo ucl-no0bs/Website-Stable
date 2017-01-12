@@ -20,6 +20,8 @@ if (isset($_POST['username'])) {
         // store the username during this session, and redirect to home page.
         $_SESSION['current_user'] = $sanitized_username;
         echo "<script> window.location.assign('../view/view_home.php'); </script>";
+    } else {
+        echo "<script> window.location.assign('../view/view_signup.php'); </script>";
     }
 } else die;
 
