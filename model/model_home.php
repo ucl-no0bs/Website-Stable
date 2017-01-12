@@ -25,13 +25,13 @@ function get_snippets ($username, $isPublic){
     }
 }
 
-function add_snippet($username, $snippet){
+function add_snippet($username, $snippet, $isPublic){
     global $conn;
 
-    echo "in add_snippet function with parameters: ".$username." ".$snippet."<br />";
+    echo "in add_snippet function with parameters: ".$username."; ".$snippet. "; ". $isPublic ."<br />";
 
     //INSERT INTO snippets (username, snippet) VALUES ('akselcc', 'some text here')
-    $sql = "INSERT INTO snippets (username, snippet) VALUES ('$username', '$snippet')";
+    $sql = "INSERT INTO snippets (username, snippet, isPublic) VALUES ('$username', '$snippet', '$isPublic')";
     if(mysqli_query($conn, $sql)){
         echo "snippet added successfully !"."<br />";
     } else{
