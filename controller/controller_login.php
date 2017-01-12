@@ -11,7 +11,8 @@ include_once('../model/model_login.php');
 $sanitized_username = sanitizeUsername($_GET['username']);
 
 if(check_user($sanitized_username, $_GET['password'])) {
-    echo "user exists"."<br />";
+    echo "Login successful.."."<br />";
+    echo "Redirecting..";
 
     $_SESSION["current_user"] = $sanitized_username;
     echo "<script> window.location.assign('../view/view_home.php'); </script>";
@@ -19,6 +20,7 @@ if(check_user($sanitized_username, $_GET['password'])) {
     //echo "<a href = '../view/view_home.php'><button class='btn waves-effect waves-light'>Home Page</button></a>";
 } else {
     echo "user/password doesn't exist";
+    echo "<script> window.location.assign('../view/view_login.php'); </script>";
 }
 
 // if it s correct: set the global $_SESSION username, and then redirect to view_home.php
