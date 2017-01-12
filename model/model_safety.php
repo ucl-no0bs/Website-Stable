@@ -7,7 +7,7 @@ function sanitizeUsername ($user_name) {
 
 
 
-function hackPassword ($user_pw) {
+function hashPassword ($user_pw) {
     return password_hash($user_pw, PASSWORD_DEFAULT);
 }
 
