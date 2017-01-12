@@ -4,17 +4,26 @@ include_once('../model/db_connection.php');
 
 include_once('../model/model_home.php');
 
-
-$snippets = get_snippets($_SESSION["current_user"]);
+// Gets all your private snippets
+$private_snippets = get_snippets($_SESSION["current_user"], 'False');
 $count = 1;
-while($row = mysqli_fetch_assoc($snippets)){
+while($row = mysqli_fetch_assoc($private_snippets)){
     echo '<li>
             <div class="collapsible-header active">Note ' . $count++ . ':</div>
             <div class="collapsible-body">' . $row['snippet'] . '</div>
           </li>';
 }
 
-// queries all the snippets (using the functions defined in model)
-// puts the results in a variable
+echo "<h4>Public Snippets:</h4>";
+$public_snippets = get_snippets($_SESSION["current_user"], 'True');
+while($row2 = mysqli_fetch_assoc($public_snippets)){
+    echo '<li>
+            <div class="collapsible-header active">Note from: ' . $row2['username'] . '</div>
+            <div class="collapsible-body">' . $row2['snippet'] . '</div>
+          </li>';
+}
+
+// Gets all the public snippets out there:
+
 
  ?>

@@ -6,12 +6,16 @@ include_once('model_safety.php');
 /* function
 returns all snippets from a user
 */
-function get_snippets ($username){
+function get_snippets ($username, $isPublic){
     global $conn;
 
     //echo "in get_snippets function with username parameter: ". $username ."<br />";
-    $sql = "SELECT snippet from snippets WHERE username='$username'";
-    
+    // queries either your own private stuff or public snippets:
+    if ($isPublic === 'True')
+        $sql = "SELECT username, snippet FROM snippets WHERE isPublic=".$isPublic;
+    else
+        $sql = "SELECT username, snippet from snippets WHERE username='$username' AND isPublic=".$isPublic;
+
     $result = mysqli_query($conn, $sql);
     if($result){
         //echo "snippets successfully retrieved !"."<br />";

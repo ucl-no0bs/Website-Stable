@@ -14,8 +14,8 @@ if(check_user($sanitized_username, $_GET['password'])) {
     echo "user exists"."<br />";
 
     $_SESSION["current_user"] = $sanitized_username;
-    //echo "<script> window.location.assign('../view/view_home.php'); </script>";
-    echo "<a href='../view/view_home.php'>Go to home page</a>";
+    echo "<script> window.location.assign('../view/view_home.php'); </script>";
+    // echo "<a href='../view/view_home.php'>Go to home page</a>";
     //echo "<a href = '../view/view_home.php'><button class='btn waves-effect waves-light'>Home Page</button></a>";
 } else {
     echo "user/password doesn't exist";
