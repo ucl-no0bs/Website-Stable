@@ -9,8 +9,8 @@ include_once('../model/model_signup.php');
 if (isset($_POST['username'])) {
     
     
-    $sanitized_username = sanitizeUsername($_POST['username']);
-    $hashed_pw = hashPassword($_POST['password']);
+    $sanitized_username = sanitize($_POST['username']);
+    $hashed_pw = hashPassword(sanitize($_POST['password']));
     
     if (!user_exists($sanitized_username)) {
         
