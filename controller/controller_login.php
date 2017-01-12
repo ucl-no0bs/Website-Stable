@@ -8,13 +8,12 @@ include_once('../model/model_login.php');
 //include_once('../view/import_materialize.php');
 
 // Satinitizes the input (in the safe version)
-$hashed_pw = 
-// Checks the database if username/pw exist by using the functions in model/model_login.php
-$user_exists = check_user($_GET['username'], $_GET['password']);
+$sanitized_username = sanitizeUsername($_POST['username']);
+$hashed_pw = hashPassword($_POST['password']);
 
-if($user_exists) {
+if(check_user($sanitized_username, $hashed_pw)) {
     echo "user exists"."<br />";
-    $_SESSION["current_user"] = $_GET['username'];
+    $_SESSION["current_user"] = $sanitized_username;
     //echo "<script> window.location.assign('../view/view_home.php'); </script>";
     echo "<a href='../view/view_home.php'>Go to home page</a>";
     //echo "<a href = '../view/view_home.php'><button class='btn waves-effect waves-light'>Home Page</button></a>";
