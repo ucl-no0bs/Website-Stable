@@ -16,6 +16,23 @@ function add_user ($username, $password){
     }
 }
 
-echo "model_signup included"."<br />";
+// echo "model_signup included"."<br />";
+
+function user_exists($username){
+    global $conn;
+    echo "the values passed are ".$username." and ".$password." <br />";
+    //$sql_query = "SELECT count(username) FROM users WHERE username='$username' AND password='$password'";
+    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+    $result = mysqli_query($conn, $sql);
+
+    if(mysqli_num_rows($result) > 0){
+        echo "some result !";
+        return True;
+    } else{
+        echo "no result: " . $sql . "<br>" . mysqli_error($conn);
+        return False;
+    }
+
+}
 
  ?>
