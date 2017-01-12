@@ -26,10 +26,10 @@ function user_exists($username){
     $result = mysqli_query($conn, $sql);
 
     if(mysqli_num_rows($result) > 0){
-        echo "User already exists...<br>";
+        //echo "User already exists...<br>";
         return True;
     } else{
-        echo "New user...<br>Creating account...";
+        //echo "New user...<br>Creating account...";
         return False;
     }
 

@@ -12,8 +12,13 @@ $sanitized_username = sanitize($_GET['username']);
 $sanitized_pw = sanitize($_GET['password']);
 
 if(check_user($sanitized_username, $sanitized_pw)) {
-    echo "Login successful.."."<br />";
-    echo "Redirecting..";
+    include_once ('../securimage/securimage.php');
+    $securimage = new Securimage();
+    if ($securimage->check($_POST['captcha_code']) == false) {
+        echo "The security code entered was incorrect.<br /><br />";
+        echo "Please go <a href='javascript:history.go(-1)'>back</a> and try again.";
+        exit;
+    }
 
     $_SESSION["current_user"] = $sanitized_username;
     echo "<script> window.location.assign('../view/view_home.php'); </script>";
@@ -21,7 +26,7 @@ if(check_user($sanitized_username, $sanitized_pw)) {
     //echo "<a href = '../view/view_home.php'><button class='btn waves-effect waves-light'>Home Page</button></a>";
 } else {
     echo "user/password doesn't exist";
-    echo "<script> window.location.assign('../view/view_login.php'); </script>";
+    echo "<script> window.location.assign('../index.php'); </script>";
 }
 
 // if it s correct: set the global $_SESSION username, and then redirect to view_home.php

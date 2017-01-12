@@ -16,6 +16,10 @@
     <label><b>Password</b></label>
     <input type="text" placeholder="Enter Password" name="password" required>
     <br>
+	<!-- The captcha stuff (to block bots/spam) -->
+	<img id="captcha" src="../securimage/securimage_show.php" alt="CAPTCHA Image" />
+	<input type="text" name="captcha_code" size="10" maxlength="6" />
+
     <button class="btn waves-effect waves-light">Submit</button>
   </form>
 

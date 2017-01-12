@@ -17,6 +17,9 @@
       <label><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="password" required>
 
+      <!-- The captcha stuff (to block bots/spam) -->
+      <img id="captcha" src="./securimage/securimage_show.php" alt="CAPTCHA Image" />
+      <input type="text" name="captcha_code" size="10" maxlength="6" />
 
       <button class="btn waves-effect waves-light">Login</button>
     </div>
