@@ -36,11 +36,11 @@
                     <!-- Add input to submit a public/private snippet -->
                     <p>
                         <input name="isPublic" type="radio" id="test1" value="1" />
-                        <label for="test1">Public Snippet</label>
+                        <label for="test1">Public Note</label>
                     </p>
                     <p>
                         <input name="isPublic" type="radio" id="test2" value="0" />
-                        <label for="test2">Private Snippet</label>
+                        <label for="test2">Private Note</label>
                     </p>
                     <input class="btn waves-effect waves-light" type="submit" value="Add Note" />
                   </form>
