@@ -8,7 +8,7 @@
     <?php include_once('import_materialize.php'); ?>
   </head>
 
-  <?php // calls the showSnippet controller ?>
+  <?php // calls the showSnippet controller?>
 
     <body>
 
@@ -30,11 +30,20 @@
 
           <div id="modal" class="modal bottom-sheet">
             <div class="modal-content">
-              <form action="../controller/controller_home_addSnippet.php" method="post">
-                <label><b><i>New Note: </i></b></label>
-                <input type="text" name="snippet" placeholder="Enter new note here">
-                <input class="btn waves-effect waves-light" type="submit" value="Add Note" />
-              </form>
+                 <form action="../controller/controller_home_addSnippet.php" method="post">
+                    <label><b><i>New Note: </i></b></label>
+                    <input type="text" name="snippet" placeholder="Enter new note here">
+                    <!-- Add input to submit a public/private snippet -->
+                    <p>
+                        <input name="isPublic" type="radio" id="test1" value="1" />
+                        <label for="test1">Public Note</label>
+                    </p>
+                    <p>
+                        <input name="isPublic" type="radio" id="test2" value="0" />
+                        <label for="test2">Private Note</label>
+                    </p>
+                    <input class="btn waves-effect waves-light" type="submit" value="Add Note" />
+                  </form>
             </div>
           </div>
 
@@ -49,7 +58,7 @@
 
         </div>
 
-        <?php //for each element in the variable "$snippets" do stuff ?>
+        <?php //for each element in the variable "$snippets" do stuff?>
 
           <!--Import jQuery before materialize.js-->
           <?php include_once("import_js.php"); ?>
