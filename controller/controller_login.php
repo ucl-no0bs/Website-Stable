@@ -8,11 +8,11 @@ include_once('../model/model_login.php');
 //include_once('../view/import_materialize.php');
 
 // Satinitizes the input (in the safe version)
-$sanitized_username = sanitizeUsername($_POST['username']);
-$hashed_pw = hashPassword($_POST['password']);
+$sanitized_username = sanitizeUsername($_GET['username']);
 
-if(check_user($sanitized_username, $hashed_pw)) {
+if(check_user($sanitized_username, $_GET['password'])) {
     echo "user exists"."<br />";
+
     $_SESSION["current_user"] = $sanitized_username;
     //echo "<script> window.location.assign('../view/view_home.php'); </script>";
     echo "<a href='../view/view_home.php'>Go to home page</a>";
