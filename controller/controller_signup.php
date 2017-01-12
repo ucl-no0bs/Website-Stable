@@ -18,7 +18,7 @@ if (isset($_POST['username'])) {
         add_user($sanitized_username, $hashed_pw);
         
         // store the username during this session, and redirect to home page.
-        $_SESSION['current_user'] = $_POST['username'];
+        $_SESSION['current_user'] = $sanitized_username;
     }
 } else die;
 
