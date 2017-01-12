@@ -8,9 +8,10 @@ include_once('../model/model_login.php');
 //include_once('../view/import_materialize.php');
 
 // Satinitizes the input (in the safe version)
-$sanitized_username = sanitizeUsername($_GET['username']);
+$sanitized_username = sanitize($_GET['username']);
+$sanitized_pw = sanitize($_GET['password']);
 
-if(check_user($sanitized_username, $_GET['password'])) {
+if(check_user($sanitized_username, $sanitized_pw)) {
     echo "Login successful.."."<br />";
     echo "Redirecting..";
 
