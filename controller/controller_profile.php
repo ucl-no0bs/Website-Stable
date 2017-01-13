@@ -1,6 +1,9 @@
 <?php
-
 session_start();
+
+include_once('../model/model_profile.php');
+
+checkUploadSpace($_SESSION["current_user"]);
 
 $target_dir = "../images/".$_SESSION["current_user"]."/";
 // $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
