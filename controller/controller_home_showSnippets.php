@@ -23,6 +23,13 @@ while($row2 = mysqli_fetch_assoc($public_snippets)){
           </li>';
 }
 
+/* for prepared stuff
+$result = $stmt->get_result();
+while ($row = $result->fetch_assoc()) {
+    // do something with $row
+}
+*/
+
 // Gets all the public snippets out there:
 
 
