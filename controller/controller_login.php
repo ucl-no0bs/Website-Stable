@@ -17,9 +17,9 @@ if($user_exists) {
     $_SESSION["current_user"] = $_GET['username'];
     //echo "<script> window.location.assign('../view/view_home.php'); </script>";
     echo "<a href='../view/view_home.php'>Go to home page</a>";
-    //echo "<a href = '../view/view_home.php'><button class='btn waves-effect waves-light'>Home Page</button></a>";
 } else {
     echo "user/password doesn't exist";
+    echo "<script> window.location.assign('abc'); </script>";
 }
 
 // if it s correct: set the global $_SESSION username, and then redirect to view_home.php
