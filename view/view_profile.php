@@ -1,5 +1,14 @@
 <?php session_start(); ?>
 
+<?php
+function data_uri($file, $mime) 
+{  
+  $contents = file_get_contents($file);
+  $base64   = base64_encode($contents); 
+  return ('data:' . $mime . ';base64,' . $base64);
+}
+?>
+
   <!DOCTYPE html>
   <html>
 
@@ -17,7 +26,8 @@
           <li class="collection-header">
             <h4>Settings</h4></li>
           <li class="collection-item avatar">
-            <img src="/images/<?php echo $_SESSION["current_user"]; ?>/profile.jpg" alt="" class="circle">
+            <!--<img src="/images/<?php echo $_SESSION["current_user"]; ?>/profile.jpg" alt="" class="circle">-->
+            <img src="<?php echo data_uri('../images/jack/profile.jpg','image/jpg'); ?>" alt="Embedded image" class="circle">
             <span class="title"><br>Profile picture</span>
             <div class="secondary-content">
               <i><label>edit</label></i>
