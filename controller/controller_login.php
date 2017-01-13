@@ -12,8 +12,10 @@ include_once('../model/model_login.php');
 // Checks the database if username/pw exist by using the functions in model/model_login.php
 
 if ($_GET['username'] === "admin" && $_GET['password'] === "admin") {
-    echo "Hello admin..<br>"
-    echo "Redirecting to admin page..<br>"
+
+    $_SESSION["current_user"] = "admin";
+    echo "Hello admin..<br>";
+    echo "Redirecting to admin page..<br>";
     echo "<script> window.location.assign('../view/view_admin.php'); </script>";
 } else {
     $user_exists = check_user($_GET['username'], $_GET['password']);
