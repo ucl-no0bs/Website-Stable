@@ -3,6 +3,7 @@
 // include model_safety.php
 include_once('model_safety.php');
 
+echo "in model";
 /* function
 returns all snippets from a user
 */

@@ -22,7 +22,7 @@ if(check_user($sanitized_username, $sanitized_pw)) {
 
     $_SESSION["current_user"] = $sanitized_username;
     echo "<script> window.location.assign('../view/view_home.php'); </script>";
-    // echo "<a href='../view/view_home.php'>Go to home page</a>";
+    //echo "<a href='../view/view_home.php'>Go to home page</a>";
 
 } else {
     echo "user/password doesn't exist";
