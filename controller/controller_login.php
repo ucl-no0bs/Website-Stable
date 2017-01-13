@@ -25,13 +25,6 @@ if(check_user($sanitized_username, $sanitized_pw)) {
     //echo "<a href='../view/view_home.php'>Go to home page</a>";
 
 } else {
-    echo "user/password doesn't exist";
-    echo "<a href='../index.php'>Go to index page</a>";
-    //echo "<script> window.location.assign('../index.php'); </script>";
+    echo "<script> window.location.assign('../index.php'); </script>";
 }
-
-// if it s correct: set the global $_SESSION username, and then redirect to view_home.php
-// else, redirect to index.php
-// note: don't redirect to login.php directly !
-
- ?>
+?>
