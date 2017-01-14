@@ -8,7 +8,7 @@ include_once('../model/model_home.php');
 $sanitized_snippet = sanitize($_POST['snippet']);
 
 if (isset($_POST["csrf"]) && $_POST["csrf"] == $_SESSION["token"])
-    add_snippet($_SESSION['current_user'], $_POST['snippet'], $_POST['isPublic']);
+    add_snippet($_SESSION['current_user'], $sanitized_snippet, $_POST['isPublic']);
 else
     echo "ohohoh no csrf in here boy";
 
