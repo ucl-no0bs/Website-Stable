@@ -17,7 +17,7 @@ function get_snippets ($username, $isPublic){
     //$stmt->execute();
     //$result = $stmt->get_result();
 
-    if ($isPublic === 'True'){
+    if ($isPublic === '1'){
         $stmt = $conn->prepare("SELECT username, snippet FROM snippets WHERE isPublic=?");
         $stmt->bind_param("s", $isPublic);
     } else{
