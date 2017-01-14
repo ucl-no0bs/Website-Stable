@@ -8,7 +8,7 @@
 
 <body class="container" align="center">
 
-  <form action="./controller/controller_login.php" align="centre" action="get">
+  <form action="./controller/controller_login.php" align="centre" action="get" autocomplete="off">
     <h3><label><i>Fill in your details to log-in...</i></label></h3>
     <div class="container">
       <label><b>Username</b></label>
