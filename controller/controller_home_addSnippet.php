@@ -12,7 +12,7 @@ if (isset($_POST["csrf"]) && $_POST["csrf"] == $_SESSION["token"])
 else
     echo "ohohoh no csrf in here boy";
 
-//echo "<script> window.location.assign('../view/view_home.php'); </script>";
-echo "<a href='../view/view_home.php'>Go to home page</a>";
+echo "<script> window.location.assign('../view/view_home.php'); </script>";
+// echo "<a href='../view/view_home.php'>Go to home page</a>";
 
  ?>
