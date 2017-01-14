@@ -10,7 +10,7 @@ $sanitized_snippet = sanitize($_POST['snippet']);
 if (isset($_POST["csrf"]) && $_POST["csrf"] == $_SESSION["token"])
     add_snippet($_SESSION['current_user'], $sanitized_snippet, $_POST['isPublic']);
 else
-    echo "ohohoh no csrf in here boy";
+    echo "Please use the form to submit your snippet";
 
 //echo "<script> window.location.assign('../view/view_home.php'); </script>";
 echo "<a href='../view/view_home.php'>Go to home page</a>";
